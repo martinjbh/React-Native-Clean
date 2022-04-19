@@ -5,6 +5,7 @@ export default function Home({ navigation }) {
         <View style={styles.container}>
             <Text>Soy Home</Text>
             <TouchableOpacity
+                style={styles.containerBoton}
                 onPress={() => navigation.navigate('ShowRoom')}>
                 <Text >ir a ShowRoom</Text>
             </TouchableOpacity>
@@ -16,5 +17,10 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    containerBoton: {
+        padding: '1%',
+        backgroundColor:"green",
+        borderRadius:9
     },
 });
